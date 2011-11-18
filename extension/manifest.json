@@ -1,0 +1,22 @@
+{
+  "name": "AI Class Questions",
+  "version": "1.0.0",
+  "description": "Displays threads from www.aiqus.com in context of www.ai-class.com unit and homework videos.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.ai-class.com/course/video/quizquestion/*",
+        "https://www.ai-class.com/course/video/videolecture/*"
+      ],
+      "css": ["style.css"],
+      "js": ["jquery.js", "script.js"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "http://www.aiqus.com/",
+    "https://www.aiqus.com/",
+    "http://www.ai-class.com/",
+    "https://www.ai-class.com/"
+  ]
+}

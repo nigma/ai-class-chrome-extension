@@ -5,4 +5,7 @@ This simple extension displays related message threads from
 [Intro to AI course site](http://www.ai-class.com) in context
 of units and homeworks.
 
+It can be installed from Chrome Web Store from
+https://chrome.google.com/webstore/detail/monhlnpmmijealhaapfbpbgcpaapjemb.
+
 Read more at http://en.ig.ma/notebook/2011/chrome-extension-for-ai-class-forum.

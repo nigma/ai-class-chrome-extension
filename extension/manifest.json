@@ -6,6 +6,7 @@
     "48": "icons/icon-48.png",
     "128": "icons/icon-128.png"
   },
+  "background_page" : "background.html",
   "content_scripts": [
     {
       "matches": [

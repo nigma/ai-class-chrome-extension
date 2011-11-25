@@ -14,6 +14,13 @@
       ],
       "css": ["style.css"],
       "js": ["jquery.js", "contentscript-threads.js"]
+    },
+    {
+      "matches": [
+        "https://www.ai-class.com/*"
+      ],
+      "js": ["contentscript-enable-page-action.js"],
+      "run_at": "document_end"
     }
   ],
   "permissions": [

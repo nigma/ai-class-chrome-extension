@@ -99,11 +99,15 @@ function loadContent(tagFunction) {
     }
 }
 
+// Load content when aiqus tag link changes
 $("#" + aiqusLinkId).on("DOMSubtreeModified", function(){ loadContent(getCurrentTagFromLink); });
+
+// Load content on menu action (only if tag link is not available)
 $(".quiztrigger, .quizimgtrigger").on("click", function(){
     loadContent(function() {
-        // Only if not available via link
         return getCurrentTagFromLink() ? "" : getCurrentTagFromMenu();
     })
 });
+
+// On page load
 loadContent();

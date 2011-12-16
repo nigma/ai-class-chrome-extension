@@ -3,7 +3,7 @@
  * More info at http://en.ig.ma/notebook/2011/chrome-extension-for-ai-class-forum
  */
 
-var tagRegex = /(?:unit|hw)\d+\-\d+|midterm-\d+/;
+var tagRegex = /(?:unit|hw)\d+\-\d+|midterm-\d+|final-\d+/;
 var aiqusLinkId = "aiqus_discussion_link";
 var aiqusContentSelector = "#listA";
 var baseAiqusUrl = "http://www.aiqus.com/";
@@ -12,7 +12,8 @@ var contentContainerId = "aiqus_content";
 
 // Additional tag matching (when not available directly from link)
 var headerToTag = [
-    {'re':/Midterm/, 'prefix':'midterm-'}
+    {'re':/Midterm/, 'prefix':'midterm-'},
+    {'re':/Final/, 'prefix':'final-'}
 ];
 
 RegExp.escape = function (text) {
